@@ -7,6 +7,8 @@ public class HelloTest {
 	}
 
 }
+
+=============
 package com.sbi.lcpc.extracts;
 
 /*     */import java.io.File;
@@ -50,9 +52,10 @@ public class AccountOpeningExtract {
 	// public static String dtExtractDate="";
 	public static void main(String[] args) throws SQLException {
 		
-		  /*args=new String[3]; args[0]="";*/
-		  args[1]="D:\\ahamad\\AccountOpeningEAR\\props\\lcpc.properties";
+		   args=new String[3]; args[0]="";
+		  args[1]="D:/ritu1/AccountOpeningEAR/props/lcpc.properties";
 		  args[2]=".dat";
+		 
 		 
 		String dtExtractDate = "";
 		Logger.onError("Inside main of AccountOpeningExtract");
@@ -63,7 +66,7 @@ public class AccountOpeningExtract {
 		try {
 			// Get number of files to be updated
 			int arrLength = CSVExtract.getNoOfFiles(args,
-					"LCPC_ACCOUNT_OPENING_EXTRACT_LOC");
+					"database.filepath");
 			Logger.onError("Number of extract to be updated  = " + arrLength);
 			int bigCounter = 0;
 			// If no files found, terminate
@@ -4703,6 +4706,44 @@ dd^06561^00000020450557059^10141101^00000089890192762^AMARAJEET KUMAR ^000000000
 dd^06561^00000020450557060^10141101^00000089890192773^ANIL . ^00000000000000000^00000000000000000^ ^010203 ^6806589^4282787
 dd^06561^00000037102941597^10131101^00000086415610348^SOORAJ MATTAPPILLY ^00000000000000000^00000000000000000^ ^010203 ^5549272^4287819
 ff^79
+========
 
+
+#For Windows System
+
+#CONN_PROP_FILE =.\\properties\\LCPC\\Conn.properties
+
+#AO_LOG_PATH =\\Logs\\LCPC\\ActOpng\\
+#AO_REP_PATH =\\Reports\\LCPC\\ActOpng\\
+
+
+
+#For Unix System
+
+CONN_PROP_FILE =./properties/LCPC/Conn.properties
+
+AO_LOG_PATH =/Logs/LCPC/ActOpng/
+AO_REP_PATH =/Reports/LCPC/ActOpng/
+
+
+
+# Important
+# Please check extractFileNameFromPath method in CSVExtract.java for file name
+
+========
+ORA_CLS=oracle.jdbc.driver.OracleDriver
+ORA_URL=jdbc:oracle:thin:@10.189.8.236:1537:WFUAT
+ORA_UID=wfbranch
+ORA_PWD=Password
+#WFL_SRV_URL=iiop://wfapp1.sbi:2810
+#WFL_SRV_URL=iiop://10.0.22.202:2810
+#database.filepath =/wps_pf/users/wpsadmin/extractSetup/bin/DBProperty/sbiadmin.properties
+#database.filepath = D://ahamad//AccountOpeningEAR//props//sbiadmin.properties
+database.filepath=D:\\ritu1\\AccountOpeningEAR\\props\\New_AC_61038_20170821.dat_FAILED_Wed_Aug_23_08_37_48_IST_2017
+
+database.url=jdbc:oracle:thin:@10.248.0.18:1522:GCD
+database.cls=oracle.jdbc.driver.OracleDriver
+database.username=gcdckyc
+database.pwd=8FonMlnjFv2JJSpQl9fUJg==
 
 
