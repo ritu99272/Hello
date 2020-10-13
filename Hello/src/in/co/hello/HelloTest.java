@@ -6,7 +6,388 @@ public class HelloTest {
 		System.out.println("Testing Git");
 	}
 
+}========
+	
+	package com.tcs.infrastructure.extractutil;
+
+
+/*     */ import java.util.ArrayList;
+public class LcpcAccountOpeningWorkflowBean {
+	
+	/*
+	 * Non - keys
+	 */
+	String transactionId = null;
+	String transactionName = null;
+
+	/*
+	 * Keys in BusinessVO
+	 */
+	String accountPk = null;					// Key1 
+	String accountNumber = null;				// Key2
+	String accountCategory = null;				// Key3
+	String amendReasons = null;					// Key4
+	String branchCode = null;					// Key5
+	String branchName = null;					// Key6
+	String cpcCode = null;						// Key7
+	String productCode = null;					// Key8
+	String courierPk = null;					// Key9
+	String forwardingSequenceNumber = null;		// Key10
+	String consignmentNumber = null;			// Key11
+	String courierCode = null;					// Key12
+	String remarks = null;						// Key13
+	String dispatchDate = null;					// Key14
+	String forwardingLetterDate = null;			// Key15
+	String receiptDate = null;					// Key16
+	String verificationStatus = null;			// Key17
+	String documentReturned = null;				// Key18
+	String standardReasons = null;				// Key19 
+	String otherReasons = null;					// Key20
+	//These attributes are used for verification of documents purpose.
+	ArrayList acceptList = null;
+	ArrayList rejectList = null;
+	ArrayList rejectAccsList = null;
+	ArrayList onHoldList = null;
+	ArrayList onHoldAccsList = null;
+	ArrayList acceptTranIdList = null;
+	ArrayList rejectTranIdList = null;
+	ArrayList onHoldTranIdList = null;
+	
+	/**
+	 * @return the transactionId
+	 */
+	public String getTransactionId() {
+		return transactionId;
+	}
+	/**
+	 * @param transactionId the transactionId to set
+	 */
+	public void setTransactionId(String transactionId) {
+		this.transactionId = transactionId;
+	}
+	/**
+	 * @return the transactionName
+	 */
+	public String getTransactionName() {
+		return transactionName;
+	}
+	/**
+	 * @param transactionName the transactionName to set
+	 */
+	public void setTransactionName(String transactionName) {
+		this.transactionName = transactionName;
+	}
+	public String getAccountNumber() {
+		return accountNumber;
+	}
+	public void setAccountNumber(String accountNumber) {
+		this.accountNumber = accountNumber;
+	}
+	public String getAccountPk() {
+		return accountPk;
+	}
+	public void setAccountPk(String accountPk) {
+		this.accountPk = accountPk;
+	}
+	public String getAmendReasons() {
+		return amendReasons;
+	}
+	public void setAmendReasons(String amendReasons) {
+		this.amendReasons = amendReasons;
+	}
+	public String getBranchCode() {
+		return branchCode;
+	}
+	public void setBranchCode(String branchCode) {
+		this.branchCode = branchCode;
+	}
+	public String getCpcCode() {
+		return cpcCode;
+	}
+	public void setCpcCode(String cpcCode) {
+		this.cpcCode = cpcCode;
+	}
+	/**
+	 * @return the accountCategory
+	 */
+	public String getAccountCategory() {
+		return accountCategory;
+	}
+	/**
+	 * @param accountCategory the accountCategory to set
+	 */
+	public void setAccountCategory(String accountCategory) {
+		this.accountCategory = accountCategory;
+	}
+	/**
+	 * @return the branchName
+	 */
+	public String getBranchName() {
+		return branchName;
+	}
+	/**
+	 * @param branchName the branchName to set
+	 */
+	public void setBranchName(String branchName) {
+		this.branchName = branchName;
+	}
+	/**
+	 * @return the consignmentNumber
+	 */
+	public String getConsignmentNumber() {
+		return consignmentNumber;
+	}
+	/**
+	 * @param consignmentNumber the consignmentNumber to set
+	 */
+	public void setConsignmentNumber(String consignmentNumber) {
+		this.consignmentNumber = consignmentNumber;
+	}
+	/**
+	 * @return the courierCode
+	 */
+	public String getCourierCode() {
+		return courierCode;
+	}
+	/**
+	 * @param courierCode the courierCode to set
+	 */
+	public void setCourierCode(String courierCode) {
+		this.courierCode = courierCode;
+	}
+	/**
+	 * @return the courierPk
+	 */
+	public String getCourierPk() {
+		return courierPk;
+	}
+	/**
+	 * @param courierPk the courierPk to set
+	 */
+	public void setCourierPk(String courierPk) {
+		this.courierPk = courierPk;
+	}
+	/**
+	 * @return the dispatchDate
+	 */
+	public String getDispatchDate() {
+		return dispatchDate;
+	}
+	/**
+	 * @param dispatchDate the dispatchDate to set
+	 */
+	public void setDispatchDate(String dispatchDate) {
+		this.dispatchDate = dispatchDate;
+	}
+	/**
+	 * @return the documentReturned
+	 */
+	public String getDocumentReturned() {
+		return documentReturned;
+	}
+	/**
+	 * @param documentReturned the documentReturned to set
+	 */
+	public void setDocumentReturned(String documentReturned) {
+		this.documentReturned = documentReturned;
+	}
+	/**
+	 * @return the forwardingLetterDate
+	 */
+	public String getForwardingLetterDate() {
+		return forwardingLetterDate;
+	}
+	/**
+	 * @param forwardingLetterDate the forwardingLetterDate to set
+	 */
+	public void setForwardingLetterDate(String forwardingLetterDate) {
+		this.forwardingLetterDate = forwardingLetterDate;
+	}
+	
+	/**
+	 * @return the forwardingSequenceNumber
+	 */
+	public String getForwardingSequenceNumber() {
+		return forwardingSequenceNumber;
+	}
+	/**
+	 * @param forwardingSequenceNumber the forwardingSequenceNumber to set
+	 */
+	public void setForwardingSequenceNumber(String forwardingSequenceNumber) {
+		this.forwardingSequenceNumber = forwardingSequenceNumber;
+	}
+	/**
+	 * @return the productCode
+	 */
+	public String getProductCode() {
+		return productCode;
+	}
+	/**
+	 * @param productCode the productCode to set
+	 */
+	public void setProductCode(String productCode) {
+		this.productCode = productCode;
+	}
+	/**
+	 * @return the receiptDate
+	 */
+	public String getReceiptDate() {
+		return receiptDate;
+	}
+	/**
+	 * @param receiptDate the receiptDate to set
+	 */
+	public void setReceiptDate(String receiptDate) {
+		this.receiptDate = receiptDate;
+	}
+	/**
+	 * @return the remarks
+	 */
+	public String getRemarks() {
+		return remarks;
+	}
+	/**
+	 * @param remarks the remarks to set
+	 */
+	public void setRemarks(String remarks) {
+		this.remarks = remarks;
+	}
+	/**
+	 * @return the verificationStatus
+	 */
+	public String getVerificationStatus() {
+		return verificationStatus;
+	}
+	/**
+	 * @param verificationStatus the verificationStatus to set
+	 */
+	public void setVerificationStatus(String verificationStatus) {
+		this.verificationStatus = verificationStatus;
+	}
+	/**
+	 * @return the otherReasons
+	 */
+	public String getOtherReasons() {
+		return otherReasons;
+	}
+	/**
+	 * @param otherReasons the otherReasons to set
+	 */
+	public void setOtherReasons(String otherReasons) {
+		this.otherReasons = otherReasons;
+	}
+	/**
+	 * @return the standardReasons
+	 */
+	public String getStandardReasons() {
+		return standardReasons;
+	}
+	/**
+	 * @param standardReasons the standardReasons to set
+	 */
+	public void setStandardReasons(String standardReasons) {
+		this.standardReasons = standardReasons;
+	}
+	/**
+	 * @return the acceptList
+	 */
+	public ArrayList getAcceptList() {
+		return acceptList;
+	}
+	/**
+	 * @param acceptList the acceptList to set
+	 */
+	public void setAcceptList(ArrayList acceptList) {
+		this.acceptList = acceptList;
+	}
+	/**
+	 * @return the acceptTranIdList
+	 */
+	public ArrayList getAcceptTranIdList() {
+		return acceptTranIdList;
+	}
+	/**
+	 * @param acceptTranIdList the acceptTranIdList to set
+	 */
+	public void setAcceptTranIdList(ArrayList acceptTranIdList) {
+		this.acceptTranIdList = acceptTranIdList;
+	}
+	/**
+	 * @return the onHoldAccsList
+	 */
+	public ArrayList getOnHoldAccsList() {
+		return onHoldAccsList;
+	}
+	/**
+	 * @param onHoldAccsList the onHoldAccsList to set
+	 */
+	public void setOnHoldAccsList(ArrayList onHoldAccsList) {
+		this.onHoldAccsList = onHoldAccsList;
+	}
+	/**
+	 * @return the onHoldList
+	 */
+	public ArrayList getOnHoldList() {
+		return onHoldList;
+	}
+	/**
+	 * @param onHoldList the onHoldList to set
+	 */
+	public void setOnHoldList(ArrayList onHoldList) {
+		this.onHoldList = onHoldList;
+	}
+	/**
+	 * @return the onHoldTranIdList
+	 */
+	public ArrayList getOnHoldTranIdList() {
+		return onHoldTranIdList;
+	}
+	/**
+	 * @param onHoldTranIdList the onHoldTranIdList to set
+	 */
+	public void setOnHoldTranIdList(ArrayList onHoldTranIdList) {
+		this.onHoldTranIdList = onHoldTranIdList;
+	}
+	/**
+	 * @return the rejectAccsList
+	 */
+	public ArrayList getRejectAccsList() {
+		return rejectAccsList;
+	}
+	/**
+	 * @param rejectAccsList the rejectAccsList to set
+	 */
+	public void setRejectAccsList(ArrayList rejectAccsList) {
+		this.rejectAccsList = rejectAccsList;
+	}
+	/**
+	 * @return the rejectList
+	 */
+	public ArrayList getRejectList() {
+		return rejectList;
+	}
+	/**
+	 * @param rejectList the rejectList to set
+	 */
+	public void setRejectList(ArrayList rejectList) {
+		this.rejectList = rejectList;
+	}
+	/**
+	 * @return the rejectTranIdList
+	 */
+	public ArrayList getRejectTranIdList() {
+		return rejectTranIdList;
+	}
+	/**
+	 * @param rejectTranIdList the rejectTranIdList to set
+	 */
+	public void setRejectTranIdList(ArrayList rejectTranIdList) {
+		this.rejectTranIdList = rejectTranIdList;
+	}
+	
+	
 }
+
 
 =============
 package com.sbi.lcpc.extracts;
